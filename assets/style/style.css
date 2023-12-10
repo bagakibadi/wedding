@@ -1,0 +1,596 @@
+@font-face {
+    font-family: 'photograph';
+    src: url('../fonts/376Photograph.woff2') format('woff2'),
+        url('../fonts/376Photograph.woff') format('woff');
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'trajan';
+    src: url('../fonts/8072Trajan.woff2') format('woff2'),
+        url('../fonts/8072Trajan.woff') format('woff');
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'playball';
+    src: url('../fonts/3857Playball.woff2') format('woff2'),
+        url('../fonts/3857Playball.woff') format(' woff');
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'bodeback';
+    src: url('../fonts/5889Bodebeck.woff2') format('woff2'),
+        url('../fonts/5889Bodebeck.woff') format(' woff');
+    font-display: auto;
+}
+
+.photograph {
+    font-family: 'photograph' !important;
+}
+
+.container-custom {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+}
+
+.content-box {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+}
+
+.content-top {
+    height: 55vh;
+}
+
+.content-bot-2 {
+    color: white;
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.content-text {
+    width: 100%;
+    text-align: center;
+}
+
+.content-text p {
+    font-family: 'Roboto Slab';
+}
+
+.content-text h4 {
+    font-family: 'Work Sans';
+    font-size: 17px;
+}
+
+.name-text {
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.content-bot {
+    position: relative;
+    height: 45vh;
+    background: url('../images/back-bot-1.png') no-repeat;
+    background-size: cover;
+}
+
+.mbc-15 {
+    margin-bottom: 15px;
+}
+
+.image-gallery img {
+    border-radius: 20px;
+    min-height: 178px;
+    object-fit: cover;
+}
+
+.image-gallery .col-4 {
+    margin-bottom: 20px;
+}
+
+.image-top-1 {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://lh3.google.com/u/0/d/1jTFZ0J84pgqBwhoD3behJsX2kak8-ZQE=w1070-h899-iv1");
+    background-position: top center;
+    background-size: cover;
+}
+
+.overlay-img {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #1c253600 43%, #1c2536 100%);
+    opacity: 1;
+    width: 100%;
+    height: 101%;
+}
+
+.flower-top {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+
+.flower-bot {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+}
+
+.flower-top img {
+    width: 200px;
+}
+
+.flower-bot img {
+    width: 200px;
+    transform: rotate(180deg);
+}
+
+.cb-2 {
+    background-image: url('../images/back-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.invited-you p {
+    font-size: 12px;
+    font-family: 'trajan';
+    margin-bottom: 0;
+}
+
+.btn-cream {
+    background-color: #E8D3C3;
+    font-family: 'trajan';
+}
+
+.btn-cream:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn-cream:active {
+    background-color: black !important;
+    color: white !important;
+}
+
+.card-times {
+    padding: 9px 10px 10px 10px;
+    text-align: center;
+    background: #E8D3C3;
+    border-radius: 15px;
+    width: 70px;
+}
+
+.card-times h3 {
+    font-family: 'trajan';
+    font-size: 12px;
+    margin: 0;
+}
+
+.cb-3 {
+    background-image: url('../images/back-bot-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cb-4 {
+    background-image: url('../images/back-lokasi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.salam {
+    color: #E8D3C3;
+    text-align: center;
+    font-weight: 600;
+    padding: 0 20px;
+}
+
+.salam h3 {
+    font-family: 'playball';
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.salam p {
+    font-family: 'bodeback';
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.image-2-pelai img {
+    width: 165px;
+}
+
+.dan {
+    font-family: ui-sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.dan p {
+    top: 25%;
+    position: relative;
+    transform: translateY(-25%)
+}
+
+.name {
+    color: #E8D3C3;
+}
+
+.name h3 {
+    font-family: 'playball';
+    font-size: 18px;
+}
+
+.card-img-2 {
+    max-width: 165px;
+}
+
+.name p {
+    font-weight: bold;
+    font-family: 'bodeback';
+}
+
+.flower-acara-bottom {
+    z-index: 1;
+    position: absolute;
+    bottom: -5rem;
+    left: 5%;
+}
+
+.flower-acara-bottom img {
+    width: 180px;
+    height: 180px;
+    transform: rotate(90deg);
+}
+
+.flower-bottom {
+    position: absolute;
+    bottom: 40px;
+    left: 10%;
+}
+
+.flower-bottom img {
+    width: 180px;
+    height: 180px;
+    transform: rotate(90deg);
+}
+
+.flower-left {
+    position: absolute;
+    top: 15%;
+    transform: translateY(-15%);
+}
+
+.flower-left img {
+    width: 100px;
+    transform: rotate(180deg);
+}
+
+.flower-right {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    transform: translateY(-40%);
+}
+
+.flower-right img {
+    width: 100px;
+}
+
+.gold-door {
+    /* background-image: url('../images/door.png');
+    width: 90%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.door-gold {
+    width: 90%;
+    position: absolute;
+    top: 0;
+}
+
+.title h3 {
+    font-family: 'photograph';
+    font-weight: 500;
+    font-size: 45px;
+    color: white;
+    text-align: center;
+}
+
+.line-vertical {
+    width: 4px;
+    background-color: white;
+}
+
+.akad h3 {
+    font-family: 'playball';
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.akad p {
+    font-family: 'bodeback';
+    margin: 0;
+    font-size: 18px;
+}
+
+.hr-line-akad {
+    height: 4px;
+    width: 80%;
+    background-color: white;
+}
+
+.flower-acara-bot {
+    position: absolute;
+    bottom: -7rem;
+    right: -7rem;
+    z-index: 1;
+}
+
+.flower-acara-bot img {
+    width: 250px;
+}
+
+.flower-acara-left {
+    position: absolute;
+    top: 30px;
+    left: -40px;
+    z-index: 1;
+}
+
+.flower-acara-left img {
+    width: 150px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.overlay-quotes {
+    background-color: #d89d61;
+    opacity: 0.7 !important;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-text h3 {
+    font-family: 'bodeback';
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+.gallery-text p {
+    font-family: 'photograph';
+    font-size: 35px;
+}
+
+.line-white {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+
+.quotes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.quotes img {
+    height: 100%;
+}
+
+.quotes-content {
+    position: absolute;
+    max-width: 70%;
+}
+
+.quotes-content p {
+    font-family: 'bodeback';
+    margin-bottom: 0;
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+.cb-blue {
+    background-color: #1C2536;
+}
+
+.amplop-digital {
+    margin-top: 100px;
+}
+
+.amplop-digital h3 {
+    font-family: 'playball';
+    color: white;
+    margin-bottom: 22px;
+}
+
+.amplop-digital p {
+    font-family: 'bodeback';
+    color: #E8D3C3;
+}
+
+.atm {
+    width: 85%;
+    height: auto;
+}
+
+.atm-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.atm-content p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #1c2536;
+    text-align: start;
+    font-weight: 500;
+    font-family: 'Roboto Slab';
+}
+
+.flower-atm-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.flower-atm-bottom img {
+    width: 150px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.img-flb {
+    animation: flb 1s linear infinite;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: center center;
+    transform: rotate(180deg);
+}
+
+@keyframes flb {
+    0% {
+        transform: rotate(0deg) scale(1)
+    }
+
+    to {
+        transform: rotate(-3deg) scale(1.05)
+    }
+}
+
+.well {
+    position: relative;
+    /* overflow: hidden; */
+    -webkit-transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+    transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+body [data-aos-delay='3300'][data-aos].aos-animate,
+[data-aos][data-aos][data-aos-delay='3800'].aos-animate {
+    transition-delay: 3.3s;
+}
