@@ -26,6 +26,10 @@
     font-display: auto;
 }
 
+section {
+    overflow: hidden;
+}
+
 .photograph {
     font-family: 'photograph' !important;
 }
@@ -37,7 +41,7 @@
 }
 
 .content-box {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: white;
     position: relative;
@@ -48,6 +52,8 @@
 }
 
 .content-bot-2 {
+    position: relative;
+    z-index: 99;
     color: white;
     width: 100%;
     padding: 10px 15px;
@@ -206,7 +212,7 @@
 }
 
 .image-2-pelai img {
-    width: 165px;
+    width: 95%;
 }
 
 .dan {
@@ -296,7 +302,7 @@
 }
 
 .door-gold {
-    width: 90%;
+    width: 97%;
     position: absolute;
     top: 0;
 }
@@ -346,7 +352,7 @@
 .flower-acara-left {
     position: absolute;
     top: 30px;
-    left: -40px;
+    left: -60px;
     z-index: 1;
 }
 
@@ -563,6 +569,12 @@ img.hover-shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.cream-text {
+    font-family: 'bodeback';
+    color: #E8D3C3;
+    font-weight: 600;
+}
+
 
 .img-flb {
     animation: flb 1s linear infinite;
@@ -573,9 +585,17 @@ img.hover-shadow {
     transform: rotate(180deg);
 }
 
-section {
-    overflow: hidden;
+.img-rotate {
+    animation: rotate 25s linear infinite;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: center center;
 }
+
+/* section {
+    overflow: hidden;
+} */
 
 .modal {
     width: 100vw;
@@ -599,6 +619,39 @@ section {
     20% {
         transform: translateY(-10px);
     }
+}
+
+@keyframes rotate {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+
+        transform: rotate(72deg);
+    }
+
+    40% {
+
+        transform: rotate(144deg);
+    }
+
+    60% {
+
+        transform: rotate(216deg);
+    }
+
+    80% {
+
+        transform: rotate(288deg);
+    }
+
+    100% {
+
+        transform: rotate(360deg);
+    }
+
 }
 
 
