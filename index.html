@@ -31,6 +31,7 @@
       rel="stylesheet"
       href="assets/style/style.css"
     />
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body
     class="well"
@@ -106,9 +107,9 @@
                 data-aos="fade-down"
                 data-aos-delay="3000"
                 class="mbc-15"
-              >
-                Mas Diego
-              </h4>
+                id="kepada-name"
+                style="text-transform: capitalize"
+              ></h4>
               <a
                 href="#page-2"
                 data-aos="fade-down"
@@ -575,7 +576,7 @@
             <div class="col-4">
               <img
                 onclick="openModal();currentSlide(4)"
-                src="assets/images/gallery-4.jpg"
+                src="assets/images/gallery-6.jpg"
                 width="100%"
                 alt=""
               />
@@ -607,7 +608,7 @@
             <div class="col-4">
               <img
                 onclick="openModal();currentSlide(8)"
-                src="assets/images/gallery-2.jpg"
+                src="assets/images/gallery-9.jpg"
                 width="100%"
                 alt=""
               />
@@ -615,7 +616,7 @@
             <div class="col-4">
               <img
                 onclick="openModal();currentSlide(9)"
-                src="assets/images/gallery-9.jpg"
+                src="assets/images/gallery-10.webp"
                 width="100%"
                 alt=""
               />
@@ -662,7 +663,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="assets/images/gallery-4.jpg"
+                src="assets/images/gallery-6.jpg"
                 class="d-block w-100"
                 alt="..."
               />
@@ -690,14 +691,14 @@
             </div>
             <div class="carousel-item">
               <img
-                src="assets/images/gallery-2.jpg"
+                src="assets/images/gallery-9.jpg"
                 class="d-block w-100"
                 alt="..."
               />
             </div>
             <div class="carousel-item">
               <img
-                src="assets/images/gallery-9.jpg"
+                src="assets/images/gallery-10.webp"
                 class="d-block w-100"
                 alt="..."
               />
@@ -872,12 +873,24 @@
             <br />
             Anda, Anda dapat memberi kado secara cashless.
           </p>
-
+          <button
+            onclick="kirimHadiah()"
+            class="btn btn-cream btn-sm"
+            style="font-size: 14px; font-family: 'bodeback'"
+          >
+            <img
+              src="assets/images/gift.svg"
+              width="14px"
+              alt=""
+            />
+            Kirim Hadiah
+          </button>
           <div
             data-aos="zoom-in-up"
             data-aos-duration="1000"
+            id="amplop-digital"
             data-aos-delay="1400"
-            class="d-flex flex-column align-items-center justify-content-center mt-3"
+            class="d-none flex-column align-items-center justify-content-center mt-3"
           >
             <div class="atm position-relative mb-4">
               <img
@@ -980,19 +993,172 @@
               </div>
             </div>
           </div>
-          <!-- <div
+        </div>
+      </div>
+    </section>
+
+    <section class="container-custom position-relative">
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="500"
+        class="content-box cb-blue overflow-hidden"
+      >
+        <div
+          data-aos="fade-left"
+          data-aos-delay="1400"
+          data-aos-duration="1000"
+          class="flower-left"
+        >
+          <img
+            src="assets/images/floral-kiri.png"
+            alt=""
+          />
+        </div>
+        <div
+          data-aos="fade-left"
+          data-aos-delay="1400"
+          data-aos-duration="1000"
+          class="flower-atm-bottom"
+        >
+          <img
+            src="assets/images/floral-kiri.png"
+            alt=""
+          />
+        </div>
+        <div
+          data-aos="fade-left"
+          data-aos-delay="1400"
+          data-aos-duration="1000"
+          class="flower-top"
+          style="right: -50px"
+        >
+          <img
+            src="assets/images/minibunga.webp"
+            alt=""
+          />
+        </div>
+        <div
+          data-aos="fade-right"
+          data-aos-delay="1400"
+          data-aos-duration="1000"
+          class="flower-bot"
+          style="left: -50px"
+        >
+          <img
+            src="assets/images/minibunga.webp"
+            alt=""
+          />
+        </div>
+        <div
+          class="ucapan h-100 justify-content-center d-flex flex-column align-items-center"
+        >
+          <div
+            data-aos="zoom-in-down"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <h3>Berikan Ucapan & Doa</h3>
+          </div>
+          <div
             data-aos="zoom-in"
             data-aos-duration="1000"
-            data-aos-delay="2000"
-            class="mt-5 px-3"
+            data-aos-delay="1000"
+            class="card"
+            style="width: 90%"
           >
-            <p>
-              Merupakan suatu kebahagiaan bagi kami, Apabila Bapak/Ibu/Saudara/i
-              berkenan hadir untuk bersukacita bersama dan memberkati Kedua
-              mempelai yang dipersatukan Tuhan. Kami yang Berbahagia, Kedua
-              mempelai
-            </p>
-          </div> -->
+            <div class="card-header">
+              <h4
+                id="comments"
+                class="text-center"
+              >
+                Comments
+              </h4>
+            </div>
+            <form
+              id="form"
+              class="p-3"
+            >
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nama"
+                  placeholder="Masukkan Nama Anda"
+                  aria-describedby="nama"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  name="ucapan"
+                  id="ucapan"
+                  cols="30"
+                  rows="4"
+                  class="form-control"
+                  placeholder="Ucapan"
+                  required
+                ></textarea>
+              </div>
+              <div class="mb-3">
+                <select
+                  name="kehadiran"
+                  id="kehadiran"
+                  class="form-select"
+                  required
+                >
+                  <option
+                    value=""
+                    default
+                  >
+                    Konfirmasi Kehadiran
+                  </option>
+                  <option
+                    value="Hadir"
+                    default
+                  >
+                    Hadir
+                  </option>
+                  <option
+                    value="Tidak Hadir"
+                    default
+                  >
+                    Tidak Hadir
+                  </option>
+                  <option
+                    value="Masih Ragu"
+                    default
+                  >
+                    Masih Ragu
+                  </option>
+                </select>
+              </div>
+              <button
+                type="submit"
+                id="button-kirim"
+                class="btn btn-cream"
+              >
+                <img
+                  src="assets/images/send.svg"
+                  width="18px"
+                  height="18px"
+                  alt=""
+                />
+                Kirim
+              </button>
+            </form>
+            <div class="card-body px-0">
+              <div
+                id="loading-ucapan"
+                class="loading-ucapan d-none justify-content-center"
+              >
+                <!-- <h6 class="text-center mb-0" style="color: #319342;font-size: 14px;">Thanks For Comments</ class="text-center mb-0" style="color: #319342;font-size: 14px;"h6> -->
+              </div>
+              <div
+                id="all-comment"
+                class="allComments row mx-0"
+              ></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1049,7 +1215,6 @@
             alt=""
           />
         </div>
-
         <div
           class="row mx-0 h-100 flex-column justify-content-center align-items-center"
         >
@@ -1096,6 +1261,8 @@
 
     <script src="assets/js/index.js"></script>
     <script>
+      feather.replace();
+
       function openModal() {
         document.getElementById('myModal').style.display = 'block';
       }
@@ -1125,7 +1292,6 @@
         for (i = 0; i < slides.length; i++) {
           slides[i].classList.remove('active');
         }
-        console.log(n);
         slides[n - 1].classList.add('active');
       }
 
@@ -1156,7 +1322,7 @@
         button.innerHTML = 'Berhasil Salin';
       }
 
-      const targetDate = new Date('December 18, 2023 00:00:00');
+      const targetDate = new Date('December 23, 2023 12:00:00');
 
       // Fungsi untuk menghitung selisih waktu
       function calculateTimeDifference() {

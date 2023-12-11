@@ -145,6 +145,11 @@ section {
     background-repeat: no-repeat;
 }
 
+.floral-bawah {
+    position: absolute;
+    bottom: 0;
+}
+
 .invited-you p {
     font-size: 12px;
     font-family: 'trajan';
@@ -575,6 +580,32 @@ img.hover-shadow {
     font-weight: 600;
 }
 
+#comments {
+    color: #7B6945;
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+#all-comment {
+    border-top: 1px solid #e0dcd1;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.card {
+    border-radius: 12px;
+}
+
+#button-kirim {
+    font-size: 12px;
+}
+
+.ucapan h3 {
+    font-family: 'bodeback';
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
 
 .img-flb {
     animation: flb 1s linear infinite;
@@ -591,6 +622,39 @@ img.hover-shadow {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     transform-origin: center center;
+}
+
+.isi-komen h5 {
+    color: #7B6945 !important;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.isi-komen h5 span {
+    font-size: 10px;
+}
+
+.loading-ucapan {
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid #e0dcd1;
+}
+
+.isi-komen p {
+    color: #625B4F;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.isi-komen small {
+    font-size: 10px;
+}
+
+.border-tab {
+    border-bottom: 1px solid #e0dcd1;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* section {
