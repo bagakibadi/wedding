@@ -175,3 +175,13 @@ if (kepadaValue) {
 } else {
   document.getElementById('kepada-name').innerHTML = 'Saudara/i'
 }
+
+function playAudio() {
+  const amplopDigital = document.querySelector('body');
+  if (amplopDigital.classList.contains('h-100vh')) {
+    amplopDigital.classList.remove('h-100vh')
+  }
+  document.querySelector("audio").play();
+}
+
+document.querySelector("audio").play();

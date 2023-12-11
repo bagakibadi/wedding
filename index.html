@@ -34,9 +34,33 @@
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body
-    class="well"
+    class="well h-100vh"
     id="well"
   >
+    <iframe
+      src="assets/250-milliseconds-of-silence.mp3"
+      allow="autoplay"
+      id="audio"
+      style="display: none"
+      hidden
+    ></iframe>
+
+    <audio
+      id="song"
+      controls
+      autoplay
+      class="d-none"
+    >
+      <source
+        src="assets/since-i-found-you.ogg"
+        type="audio/ogg"
+      />
+      <source
+        src="assets/since i found you.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
     <section
       id="page-1"
       class="container-custom overflow-hidden position-relative"
@@ -116,6 +140,7 @@
                 data-aos-delay="3000"
                 class="btn btn-light rounded-4"
                 style="font-size: 14px"
+                onclick="playAudio()"
               >
                 Buka Undangan
               </a>

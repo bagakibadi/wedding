@@ -150,6 +150,10 @@ section {
     bottom: 0;
 }
 
+.h-100vh {
+    overflow-y: hidden;
+}
+
 .invited-you p {
     font-size: 12px;
     font-family: 'trajan';
