@@ -119,31 +119,29 @@
               >
                 Aryo & Fadil
               </h3>
-              <p
+              <div
                 data-aos="fade-down"
                 data-aos-delay="2400"
-                class="mbc-15"
-                style="font-size: 12px"
               >
-                Kepada Bapak/Ibu/Saudara/I
-              </p>
-              <h4
-                data-aos="fade-down"
-                data-aos-delay="3000"
-                class="mbc-15"
-                id="kepada-name"
-                style="text-transform: capitalize"
-              ></h4>
-              <a
-                href="#page-2"
-                data-aos="fade-down"
-                data-aos-delay="3000"
-                class="btn btn-light rounded-4"
-                style="font-size: 14px"
-                onclick="playAudio()"
-              >
-                Buka Undangan
-              </a>
+                <p
+                  class="mbc-15"
+                  style="font-size: 12px"
+                >
+                  Kepada Bapak/Ibu/Saudara/I
+                </p>
+                <h4
+                  class="mbc-15"
+                  id="kepada-name"
+                  style="text-transform: capitalize"
+                ></h4>
+                <button
+                  class="btn btn-light rounded-4"
+                  style="font-size: 14px"
+                  onclick="playAudio()"
+                >
+                  Buka Undangan
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -1321,6 +1319,7 @@
       }
 
       window.onload = function () {
+        window.scrollTo(0, 0);
         AOS.init({
           easing: 'ease-out-back',
           duration: 1000,
