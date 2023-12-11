@@ -182,6 +182,7 @@ function playAudio() {
     amplopDigital.classList.remove('h-100vh')
   }
   document.querySelector("audio").play();
+  document.getElementById('page-2').scrollIntoView()
 }
 
 document.querySelector("audio").play();
