@@ -7,6 +7,59 @@
       content="width=device-width, initial-scale=1"
     />
     <title>The Wedding of Aryo & Fadil</title>
+    <meta
+      name="title"
+      content="Undangan Pernikahan Aryo & Fadil Akad 18 Dec 2023 Resepsi 23 Dec 2023"
+    />
+    <meta
+      name="description"
+      content="You are Invited to Aryo & Fadil Wedding"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta
+      property="og:type"
+      content="website"
+    />
+    <meta
+      property="og:url"
+      content="https://bagussolay.netlify.app"
+    />
+    <meta
+      property="og:title"
+      content="Undangan Pernikahan Aryo & Fadil Akad 18 Dec 2023 Resepsi 23 Dec 2023"
+    />
+    <meta
+      property="og:description"
+      content="You are Invited to Aryo & Fadil Wedding"
+    />
+    <meta
+      property="og:image"
+      content="https://wedding-inv.netlify.app/assets/images/quotes.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta
+      property="twitter:card"
+      content="summary_large_image"
+    />
+    <meta
+      property="twitter:url"
+      content="https://bagussolay.netlify.app"
+    />
+    <meta
+      property="twitter:title"
+      content="Undangan Pernikahan Aryo & Fadil Akad 18 Dec 2023 Resepsi 23 Dec 2023"
+    />
+    <meta
+      property="twitter:description"
+      content="You are Invited to Aryo & Fadil Wedding"
+    />
+    <meta
+      property="twitter:image"
+      content="https://wedding-inv.netlify.app/assets/images/quotes.jpg"
+    />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -29,7 +82,7 @@
 
     <link
       rel="stylesheet"
-      href="assets/style/style.css"
+      href="assets/style/style.css?v=2"
     />
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
@@ -68,7 +121,7 @@
       <div class="content-box overflow-hidden">
         <div class="content-top w-100">
           <div
-            class="flower-top"
+            class="flower-top top-first"
             data-aos="fade-left"
             data-aos-delay="1000"
           >
@@ -99,6 +152,7 @@
             data-aos-delay="1000"
           >
             <img
+              width="180px"
               src="assets/images/minibunga.webp"
               alt=""
             />
@@ -831,10 +885,11 @@
         </div>
       </div>
     </section>
-    <section class="container-custom position-relative">
+    <section class="container-custom overflow-unset position-relative">
       <div
         data-aos="zoom-in"
         data-aos-duration="500"
+        style="height: auto !important"
         class="content-box cb-blue overflow-hidden"
       >
         <div
@@ -887,10 +942,10 @@
           data-aos="zoom-in-down"
           data-aos-duration="1000"
           data-aos-delay="800"
-          class="text-center amplop-digital"
+          class="text-center amplop-digital position-relative"
         >
           <h3>Amplop Digital</h3>
-          <p>
+          <p class="amplop-doa">
             Doa Restu Anda merupakan <br />karunia yang sangat berarti bagi
             kami. <br /><br />Dan jika memberi adalah ungkapan tanda kasih
             <br />
@@ -1016,170 +1071,119 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container-custom position-relative">
-      <div
-        data-aos="zoom-in"
-        data-aos-duration="500"
-        class="content-box cb-blue overflow-hidden"
-      >
-        <div
-          data-aos="fade-left"
-          data-aos-delay="1400"
-          data-aos-duration="1000"
-          class="flower-left"
-        >
-          <img
-            src="assets/images/floral-kiri.png"
-            alt=""
-          />
-        </div>
-        <div
-          data-aos="fade-left"
-          data-aos-delay="1400"
-          data-aos-duration="1000"
-          class="flower-atm-bottom"
-        >
-          <img
-            src="assets/images/floral-kiri.png"
-            alt=""
-          />
-        </div>
-        <div
-          data-aos="fade-left"
-          data-aos-delay="1400"
-          data-aos-duration="1000"
-          class="flower-top"
-          style="right: -50px"
-        >
-          <img
-            src="assets/images/minibunga.webp"
-            alt=""
-          />
-        </div>
-        <div
-          data-aos="fade-right"
-          data-aos-delay="1400"
-          data-aos-duration="1000"
-          class="flower-bot"
-          style="left: -50px"
-        >
-          <img
-            src="assets/images/minibunga.webp"
-            alt=""
-          />
-        </div>
-        <div
-          class="ucapan h-100 justify-content-center d-flex flex-column align-items-center"
-        >
           <div
-            data-aos="zoom-in-down"
-            data-aos-duration="1000"
-            data-aos-delay="500"
+            class="ucapan h-100 my-5 pb-5 justify-content-center d-flex flex-column align-items-center"
           >
-            <h3>Berikan Ucapan & Doa</h3>
-          </div>
-          <div
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-delay="1000"
-            class="card"
-            style="width: 90%"
-          >
-            <div class="card-header">
-              <h4
-                id="comments"
-                class="text-center"
-              >
-                Comments
-              </h4>
-            </div>
-            <form
-              id="form"
-              class="p-3"
+            <div
+              data-aos="zoom-in-down"
+              data-aos-duration="1000"
+              data-aos-delay="500"
+              class="ucapan-title"
             >
-              <div class="mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="nama"
-                  placeholder="Masukkan Nama Anda"
-                  aria-describedby="nama"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <textarea
-                  name="ucapan"
-                  id="ucapan"
-                  cols="30"
-                  rows="4"
-                  class="form-control"
-                  placeholder="Ucapan"
-                  required
-                ></textarea>
-              </div>
-              <div class="mb-3">
-                <select
-                  name="kehadiran"
-                  id="kehadiran"
-                  class="form-select"
-                  required
+              <h3>Berikan Doa & Ucapan</h3>
+              <h2>UNTUK KAMI BERDUA</h2>
+              <p>
+                Tulislah harapan dan doa terbaik Anda untuk kedua mempelai
+                melalui kolom dibawah.
+              </p>
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="1000"
+              class="card"
+              style="width: 90%"
+            >
+              <div class="card-header">
+                <h4
+                  id="comments"
+                  class="text-center"
                 >
-                  <option
-                    value=""
-                    default
-                  >
-                    Konfirmasi Kehadiran
-                  </option>
-                  <option
-                    value="Hadir"
-                    default
-                  >
-                    Hadir
-                  </option>
-                  <option
-                    value="Tidak Hadir"
-                    default
-                  >
-                    Tidak Hadir
-                  </option>
-                  <option
-                    value="Masih Ragu"
-                    default
-                  >
-                    Masih Ragu
-                  </option>
-                </select>
+                  Comments
+                </h4>
               </div>
-              <button
-                type="submit"
-                id="button-kirim"
-                class="btn btn-cream"
+              <form
+                id="form"
+                class="p-3"
               >
-                <img
-                  src="assets/images/send.svg"
-                  width="18px"
-                  height="18px"
-                  alt=""
-                />
-                Kirim
-              </button>
-            </form>
-            <div class="card-body px-0">
-              <div
-                id="loading-ucapan"
-                class="loading-ucapan d-none justify-content-center"
-              >
-                <!-- <h6 class="text-center mb-0" style="color: #319342;font-size: 14px;">Thanks For Comments</ class="text-center mb-0" style="color: #319342;font-size: 14px;"h6> -->
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nama"
+                    placeholder="Masukkan Nama Anda"
+                    aria-describedby="nama"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    name="ucapan"
+                    id="ucapan"
+                    cols="30"
+                    rows="4"
+                    class="form-control"
+                    placeholder="Ucapan"
+                    required
+                  ></textarea>
+                </div>
+                <div class="mb-3">
+                  <select
+                    name="kehadiran"
+                    id="kehadiran"
+                    class="form-select"
+                    required
+                  >
+                    <option
+                      value=""
+                      default
+                    >
+                      Konfirmasi Kehadiran
+                    </option>
+                    <option
+                      value="Hadir"
+                      default
+                    >
+                      Hadir
+                    </option>
+                    <option
+                      value="Tidak Hadir"
+                      default
+                    >
+                      Tidak Hadir
+                    </option>
+                    <option
+                      value="Masih Ragu"
+                      default
+                    >
+                      Masih Ragu
+                    </option>
+                  </select>
+                </div>
+                <button
+                  type="submit"
+                  id="button-kirim"
+                  class="btn btn-cream"
+                >
+                  <img
+                    src="assets/images/send.svg"
+                    width="18px"
+                    height="18px"
+                    alt=""
+                  />
+                  Kirim
+                </button>
+              </form>
+              <div class="card-body px-0">
+                <div
+                  id="loading-ucapan"
+                  class="loading-ucapan d-none justify-content-center"
+                ></div>
+                <div
+                  id="all-comment"
+                  class="allComments row mx-0"
+                ></div>
               </div>
-              <div
-                id="all-comment"
-                class="allComments row mx-0"
-              ></div>
             </div>
           </div>
         </div>
@@ -1282,7 +1286,7 @@
       </div>
     </section>
 
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/index.js?v=1"></script>
     <script>
       feather.replace();
 
