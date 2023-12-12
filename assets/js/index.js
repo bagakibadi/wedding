@@ -11,7 +11,7 @@ nameText2.innerHTML = nameText2.textContent.replace(/\S/g, (match, index) => {
   return `<span class='letter' style='--i:${i2}'>${match}</span>`;
 });
 
-const api = 'http://bagussolay.my.id/api';
+const api = 'https://bagussolay.my.id/api';
 
 const getData = () => {
   fetch(`${api}/ucapan`, {
@@ -42,7 +42,7 @@ const renderComment = (commentsData) => {
       <div class="me-3">
         <img width="28px" height="28px" src="assets/images/comment.png" alt="" />
       </div>
-      <div class="isi-komen">
+      <div class="isi-komen text-start">
         <h5>${comment.name} <span class="badge bg-secondary">${
       comment.kehadiran
     }</span></h5>
