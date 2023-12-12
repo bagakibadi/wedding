@@ -26,6 +26,10 @@
     font-display: auto;
 }
 
+* {
+    color: #113468;
+}
+
 .top-first img {
     width: 120px !important;
 }
@@ -82,11 +86,18 @@ section {
     font-size: 45px;
 }
 
+.btn-primary-2 {
+    background-color: #113468;
+    color: white;
+}
+
 .content-bot {
     position: relative;
     height: 50vh;
-    background: url('../images/back-bot-1.png') no-repeat;
+    background: url('../images/Tema2/bg-awal-bawah.jpg');
     background-size: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
 }
 
 .mbc-15 {
@@ -114,11 +125,44 @@ section {
 .overlay-img {
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
     background-color: transparent;
-    background-image: linear-gradient(180deg, #1c253600 43%, #1c2536 100%);
+    background-image: linear-gradient(180deg, #FEEBEE00 50%, #FFFFFF 100%);
     opacity: 1;
     width: 100%;
     height: 101%;
 }
+
+.flower-top-left {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+
+.flower-top-right {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+
+.flower-bot-left {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+}
+
+.flower-bot-right {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+}
+
+/* .flower-top-right img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+} */
 
 .flower-top {
     position: absolute;
@@ -134,6 +178,13 @@ section {
     z-index: 99;
 }
 
+.flower-bot-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+}
+
 .flower-top img {
     width: 200px;
 }
@@ -144,7 +195,7 @@ section {
 }
 
 .cb-2 {
-    background-image: url('../images/back-2.png');
+    background-image: url('../images/Tema2/bg-awal.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -193,14 +244,27 @@ section {
     margin: 0;
 }
 
+.cb-3 h3 {
+    color: #7A7A7A;
+}
+
+.cb-3 p {
+    color: #7A7A7A;
+}
+
 .cb-3 {
-    background-image: url('../images/back-bot-2.jpg');
+    background-image: url('../images/Tema2/bg-awal.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.cb-4 h3,
+.cb-4 p {
+    color: white;
+}
+
 .cb-4 {
-    background-image: url('../images/back-lokasi.jpg');
+    background-image: url('../images/Tema2/bg-awal.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -375,6 +439,39 @@ section {
     transform: scaleX(-1);
 }
 
+.end-image {
+    width: 170px;
+    border-radius: 200px;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.5);
+}
+
+.flow-left {
+    position: absolute;
+    width: 60%;
+    height: 70%;
+    left: -2rem;
+    top: -2rem;
+    background: url('../images/Tema2/bunga-akhir-tema-01-new-1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flow-right {
+    position: absolute;
+    width: 35%;
+    z-index: 2;
+    height: 60%;
+    right: 0.8rem;
+    bottom: -1rem;
+    background: url('../images/Tema2/bunga-akhir-tema-01-new-1-1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content-end * {
+    color: #586472 !important;
+}
+
 .overlay-quotes {
     background-color: #d89d61;
     opacity: 0.7 !important;
@@ -387,9 +484,11 @@ section {
     font-family: 'bodeback';
     margin-bottom: 0;
     font-size: 40px;
+    color: #103468;
 }
 
 .gallery-text p {
+    color: #103468;
     font-family: 'photograph';
     font-size: 35px;
 }
@@ -397,7 +496,7 @@ section {
 .line-white {
     height: 2px;
     width: 100%;
-    background-color: white;
+    background-color: #103468;
 }
 
 .quotes {
@@ -693,6 +792,33 @@ img.hover-shadow {
     display: inline-block;
     animation: waviy 1.5s infinite;
     animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes swing {
+    20% {
+        transform: rotate3d(0, 0, 1, 15deg)
+    }
+
+    40% {
+        transform: rotate3d(0, 0, 1, -10deg)
+    }
+
+    60% {
+        transform: rotate3d(0, 0, 1, 5deg)
+    }
+
+    80% {
+        transform: rotate3d(0, 0, 1, -5deg)
+    }
+
+    to {
+        transform: rotate3d(0, 0, 1, 0deg)
+    }
+}
+
+.swing {
+    transform-origin: top center;
+    animation-name: swing
 }
 
 @keyframes waviy {
