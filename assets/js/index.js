@@ -142,6 +142,7 @@ const postData = (data) => {
             loading.innerHTML = '';
             loading.classList.add('d-none');
             loading.classList.remove('d-flex');
+            buttonSubmit.disabled = false;
           }, 2000);
         }, 1500);
       }
