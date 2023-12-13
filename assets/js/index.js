@@ -72,6 +72,13 @@ function getTimeAgo(timestamp) {
     return `${minutes} Menit Lalu`;
   } else if (hours < 24) {
     return `${hours} Jam Lalu`;
+  } else if (hours >= 24 && hours < 48) {
+    return 'Kemarin';
+  } else if (hours >= 48 && hours < 72) {
+    return '2 Hari Lalu';
+  } else if (hours >= 72 && hours < 168) {
+    const days = Math.floor(hours / 24);
+    return `${days} Hari Lalu`;
   } else {
     return commentTime.toLocaleDateString('en-US');
   }
